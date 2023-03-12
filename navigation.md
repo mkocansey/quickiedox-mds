@@ -1,6 +1,7 @@
 * # Getting Started
 
 	* [Installation]({version}/installation)
+	* [Directory Structure]({version}/structure)
 	* [How This Works]({version}/architecture)
 	* [Known Issues]({version}/known-issues)
 	* [Deploying Docs]({version}/deployment)
@@ -27,23 +28,3 @@
 	* [Code Snippets]({version}/markdown-code)
 	* [Inline Attributes]({version}/markdown-attributes)
 	* [Attention Grabbers]({version}/markdown-alerts)
-	
-
-* # Sample Nested Nav
-
-	* ## Level One
-		* [Designing APIs]({version}/api-design)
-		* [Authenticate Users]({version}/authentication)
-		
-		
-	* ## Level Two
-		*  [Save User]({version}/aggregator-save)
-		*  [user Details]({version}/aggregator)
-		*  [List All Users]({version}/aggregators)
-		*  [Delete User]({version}/aggregator-delete)
-		
-		
-	* ## Level Three
-		*  [Save Company]({version}/company-save)
-		*  [Company Details]({version}/company)
-		*  [List Companies]({version}/companies)

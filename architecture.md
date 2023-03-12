@@ -20,17 +20,21 @@ The first step is to clone the repo since this is not a composer package.
 
 ### via HTTPS
 ```bash
-// create a directory where you want to clone quickiedox
-// cd into that directory and run 
-
+# create a directory where you want to clone quickiedox
+# cd into that directory and run 
+```
+{.command-line}
+```bash
 git clone https://github.com/mkocansey/quickiedox.git
 ```
 
 ### via SSH
 ```bash
-// create a directory where you want to clone quickiedox
-// cd into that directory and run 
-
+# create a directory where you want to clone quickiedox
+# cd into that directory and run 
+```
+{.command-line}
+```bash
 git clone git@github.com:mkocansey/quickiedox.git
 ```
 
@@ -52,6 +56,7 @@ See the [Conventions > Versioning docs]({version}/convention-versions) for more 
 
 It is possible to pull in your markdown files by visiting one of the routes defined in the project. Go to the root of the project you cloned and start the inbuilt PHP server using the command below:
 
+{.command-line}
 ```bash
 php -S localhost:8000
 ```
@@ -63,6 +68,7 @@ Once the server is started visit [http://localhost:8000/get-markdown](http://loc
 
 At the root of the project is a `get-markdown.sh`{.inline} shell script containing very few lines of code to clone the repo containing the markdown files. You will need to modify the script and put in the url to your markdown files repo. Next run the script as shown below in a terminal. You need to be at the root of your project.
 
+{.command-line}
 ```bash
 ./get-markdown.sh
 ```
