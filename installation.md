@@ -2,7 +2,7 @@
 
 Quickly create elegant documentation from markdown files. That is QuickieDox. 
 
-The idea is to keep this as light as possible so QuickieDox is a **purely vanilla PHP** project and should work with most versions of PHP though version 8 is what is locked in the composer file. See [customization]({version}/customize-php-version) for how to change this. 
+The idea was/is to keep this as light as possible so QuickieDox is a **purely vanilla PHP** project and should work with PHP >= 7.4.
 
 QuickieDox was inspired a lot by the [Laravel documentation](https://laravel.com/docs). Being a regular user of the Laravel docs website, it was intriguing to learn they loaded the docs from [markdown files](https://github.com/laravel/docs). I snooped around the repo a bit and that gave rise to this project.
 
