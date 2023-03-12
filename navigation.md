@@ -16,7 +16,6 @@
 * # Customization
 
 	* [Home Page]({version}/customize-home)
-	* [PHP Version]({version}/customize-php-version)
 	* [The Config File]({version}/customize-config)
 	* [Tailwind Config]({version}/customize-tailwind)
 	* [Protecting Pages]({version}/customize-auth)
