@@ -6,13 +6,10 @@
 	* [Known Issues]({version}/known-issues)
 	* [Deploying Docs]({version}/deployment)
 	
-	* ## Conventions
-	
-		* [The Navigation File]({version}/convention-nav)
-		* [Doc Content Files]({version}/convention-doc)
-		* [Versioning]({version}/convention-versions)
-
-  
+* # Conventions
+	* [The Navigation File]({version}/convention-nav)
+	* [Doc Content Files]({version}/convention-doc)
+	* [Versioning]({version}/convention-versions)
 * # Customization
 
 	* [Home Page]({version}/customize-home)
