@@ -4,4 +4,4 @@ The default behaviour of QuickieDox is to load a home page with a button that le
 
 The content of the home page can be found in `home.php`{.inline} at the root of the project. Simply edit this page to suit your design needs. 
 
-You can change your theme colours by [following this]({version}/customize-tailwind).
+You can change your theme colours by [following this]({version}/customize-tailwind) guide.
