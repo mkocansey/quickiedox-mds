@@ -1,25 +1,25 @@
 * # Getting Started
 
-	* [Installation]({version}/installation)
-	* [Directory Structure]({version}/structure)
-	* [How This Works]({version}/architecture)
-	* [Known Issues]({version}/known-issues)
-	* [Deploying Docs]({version}/deployment)
+	* [Installation](installation)
+	* [Directory Structure](structure)
+	* [How This Works](architecture)
+	* [Known Issues](known-issues)
+	* [Deploying Docs](deployment)
 * # Customization
 
-	* [Home Page]({version}/customize-home)
-	* [The Config File]({version}/customize-config)
-	* [Tailwind Config]({version}/customize-tailwind)
-	* [Protecting Pages]({version}/customize-auth)
+	* [Home Page](customize-home)
+	* [The Config File](customize-config)
+	* [Tailwind Config](customize-tailwind)
+	* [Protecting Pages](customize-auth)
 	
 * # Conventions
-	* [The Navigation File]({version}/convention-nav)
-	* [Documentation Files]({version}/convention-doc)
-	* [Versioning]({version}/convention-versions)
+	* [The Navigation File](convention-nav)
+	* [Documentation Files](convention-doc)
+	* [Versioning](convention-versions)
 	
 * # Markdown Syntax
 
-	* [Tables]({version}/markdown-tables)
-	* [Code Snippets]({version}/markdown-code)
-	* [Inline Attributes]({version}/markdown-attributes)
-	* [Attention Grabbers]({version}/markdown-alerts)
+	* [Tables](markdown-tables)
+	* [Code Snippets](markdown-code)
+	* [Inline Attributes](markdown-attributes)
+	* [Attention Grabbers](markdown-alerts)

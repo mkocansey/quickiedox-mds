@@ -15,7 +15,7 @@ QuickieDox is not provided as software as a service. QuickieDox does not host yo
 
 ## Installation 
 
-QuickieDox is not a composer package so there is really nothing to composer install. To create your own documentation website, simply [**clone the repo**](https://github.com/mkocansey/quickiedox-mds/archive/refs/heads/main.zip) and begin your [customization]({version}/customize-home). 
+QuickieDox is not a composer package so there is really nothing to composer install. To create your own documentation website, simply [**clone the repo**](https://github.com/mkocansey/quickiedox-mds/archive/refs/heads/main.zip) and begin your [customization](customize-home). 
 
 ### Clone via HTTPS
 ```bash
@@ -83,16 +83,16 @@ Clicking on **Read Documentation** from the home page as shown in the image abov
 
 You can tell from the above image that QuickieDox is unable to load the documentation navigation or the default documentation pages. This is very much expected since **we have not pulled in the markdown files** that make up the documentation. After all that is the whole essence of QuickieDox. To generate documentation from markdown files. 
 
-By default QuickieDox expects the markdown files to be in the `markdown`{.inline} directory at the root of the project you just cloned. You can use any directory name of your choice but just make sure you update the [config file]({version}/customize-config) to tell QuickieDox where to look for your `.md`{.inline} files.
+By default QuickieDox expects the markdown files to be in the `markdown`{.inline} directory at the root of the project you just cloned. You can use any directory name of your choice but just make sure you update the [config file](customize-config) to tell QuickieDox where to look for your `.md`{.inline} files.
 
 ## Pull In The Markdown Files
 
-The markdown files that make up the documentation are expected to sit in a directory you specify. The default is `markdown`{.inline}. The [assumption/convention]({version}/convention-doc) here is that your markdown files are hosted in their own git repo. There are two ways to pull in the markdown files.
+The markdown files that make up the documentation are expected to sit in a directory you specify. The default is `markdown`{.inline}. The [assumption/convention](convention-doc) here is that your markdown files are hosted in their own git repo. There are two ways to pull in the markdown files.
 
 ### Just Copy and Paste
 
 QuickieDox only needs `.md`{.inline} files in the `markdown`{.inline} directory. You can simple copy and paste your `.md`{.inline} files into this directory and voila! If your documentation is in versions, you will need to have a separate directory for every version number. For example, if your documentation has version 1.5 and 2.2, you will need to create `1.5`{.inline} and `2.2`{.inline} directories in the `markdown`{.inline} directory. You will then need to copy the appropriate `.md`{.inline} files into their respective directories. 
-See the [Conventions > Versioning docs]({version}/convention-versions) for more on this.
+See the [Conventions > Versioning docs](convention-versions) for more on this.
 
 ### Use The Inbuilt Cloning Tool
 
@@ -102,6 +102,6 @@ It is much easier to pull in your markdown files using the cloning URL that is b
 [http://localhost:8000/get-markdown](http://localhost:8000/get-markdown)
 
 {.stop.alert}
-Ensure you have properly modified your QuickieDox [configurations]({version}/customize-config) before clicking on the URL above to pull in your markdown files. The URL will ask for the PIN you specify in the `.env`{.inline} or `.config.php`{.inline} file. You won't be able to use this URL if your PIN is blank.
+Ensure you have properly modified your QuickieDox [configurations](customize-config) before clicking on the URL above to pull in your markdown files. The URL will ask for the PIN you specify in the `.env`{.inline} or `.config.php`{.inline} file. You won't be able to use this URL if your PIN is blank.
 
 &nbsp;
