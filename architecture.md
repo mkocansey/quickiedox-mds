@@ -38,6 +38,7 @@ At the view level, Javascript is then used to:
 * Highlight the current page in the navigation so user knows what page they are viewing.
 * Make navigation items collapsible and expandable.
 * Draw the sub navigation within the documentation.
+* Make all external links open in a new window/tab.
 
 {.alert.tip}
 You are encouraged to just snoop around the code to better understand how documentation content is served. It is not as complex as one might presume.
