@@ -5,11 +5,6 @@
 	* [How This Works]({version}/architecture)
 	* [Known Issues]({version}/known-issues)
 	* [Deploying Docs]({version}/deployment)
-	
-* # Conventions
-	* [The Navigation File]({version}/convention-nav)
-	* [Doc Content Files]({version}/convention-doc)
-	* [Versioning]({version}/convention-versions)
 * # Customization
 
 	* [Home Page]({version}/customize-home)
@@ -17,7 +12,11 @@
 	* [Tailwind Config]({version}/customize-tailwind)
 	* [Protecting Pages]({version}/customize-auth)
 	
-  
+* # Conventions
+	* [The Navigation File]({version}/convention-nav)
+	* [Documentation Files]({version}/convention-doc)
+	* [Versioning]({version}/convention-versions)
+	
 * # Markdown Syntax
 
 	* [Tables]({version}/markdown-tables)

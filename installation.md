@@ -2,24 +2,20 @@
 
 Quickly create elegant documentation from markdown files. That is QuickieDox. 
 
-The idea was/is to keep this as light as possible so QuickieDox is a **purely vanilla PHP** project and should work with PHP >= 7.4.
+The idea was/is to keep this as light as possible so QuickieDox is a **purely vanilla PHP** project and works with PHP >= 7.4.
 
-QuickieDox was inspired a lot by the [Laravel documentation](https://laravel.com/docs). Being a regular user of the Laravel docs website, it was intriguing to learn they loaded the docs from [markdown files](https://github.com/laravel/docs). I snooped around the repo a bit and that gave rise to this project.
-
-{.alert.tip}
 To use QuickieDox you must already know how to write markdown syntax and also know some basic PHP. [This guide](https://www.markdownguide.org/getting-started/) can help refresh your markdown knowledge.
 
 ## The Ideal Use Case
 
-You have a project that requires you to write out some documentation for either yourself or others to read. This may necessarily not be a technical project, anything that requires documentation is ideal. QuickieDox gives you a headstart with an already beautifully designed documentation website that only requires your markdown files to work its magic.
+You have a project that requires that you write out some documentation for either yourself or others to read. This may necessarily not be a technical project, anything that requires documentation is ideal. QuickieDox gives you a headstart with an already beautifully designed documentation website that only requires your markdown files for it to work.
 
 {.alert.stop}
-QuickieDox does not host your documentation. This is not a docs as a service platform. You will need to host everything yourself just like you would host any of your websites. 
+QuickieDox is not provided as software as a service. QuickieDox does not host your documentation. You will need to host everything yourself just like you would host any of your websites. 
 
 ## Installation 
 
-
-QuickieDox is not a composer package so there is really nothing to composer install. To create your own documentation website, simply **clone the repo** and begin your [customization]({version}/customize-home). 
+QuickieDox is not a composer package so there is really nothing to composer install. To create your own documentation website, simply [**clone the repo**](https://github.com/mkocansey/quickiedox-mds/archive/refs/heads/main.zip) and begin your [customization]({version}/customize-home). 
 
 ### Clone via HTTPS
 ```bash
@@ -41,10 +37,14 @@ git clone https://github.com/mkocansey/quickiedox.git
 git clone git@github.com:mkocansey/quickiedox.git
 ```
 
+### Rename .env-example
+
+You will find a `.env-example`{.inline} file at the root of the project you just cloned. Rename `.env-example`{.inline} to `.env`{.inline}. The app will not run if this is not done.
+
 ## Run the App
 
 Now that you have cloned the repo, let us run the app to ensure you can see the documentation that 
-ships by default.
+ships by default. From the root of the directory you just cloned, run:
 
 {.command-line}
 ```bash
@@ -55,6 +55,7 @@ Let's start an inbuilt PHP server to quickly test what you just cloned.
 
 {.command-line}
 ```bash
+# this assumes port 8000 is not in use by another site or app
 php -S localhost:8000
 ```
 
@@ -73,7 +74,7 @@ Navigating to [http://localhost:8000](http://localhost:8000) should display the 
 
 &nbsp;
 
-Clicking on **Read Docs** from the image above should display the screen below.
+Clicking on **Read Documentation** from the home page as shown in the image above should display the screen below.
 
 ![QuickieDox Homepage](/assets/images/installation.jpg)
 
@@ -86,33 +87,21 @@ By default QuickieDox expects the markdown files to be in the `markdown`{.inline
 
 ## Pull In The Markdown Files
 
-The markdown files that make up the documentation are expected to sit in a directory you specify. The default is `markdown`{.inline}. The [assumption/convention]({version}/convention-doc) here is that your markdown files are hosted in their own git repo. There are three ways to pull in the markdown files.
+The markdown files that make up the documentation are expected to sit in a directory you specify. The default is `markdown`{.inline}. The [assumption/convention]({version}/convention-doc) here is that your markdown files are hosted in their own git repo. There are two ways to pull in the markdown files.
 
 ### Just Copy and Paste
 
-All QuickieDox needs to are `.md`{.inline} files in the `markdown`{.inline} directory. You can simple copy and paste your `.md`{.inline} files into this directory and voila! If your documentation is in versions, you will need to have a separate directory for every version number. For example, if your documentation has version 1.x and 2.x, you will need to create a `1.x`{.inline} and `2.x`{.inline} directories in the `markdown`{.inline} directory. You will then need to copy the appropriate `.md`{.inline} files into their respective directories. 
+QuickieDox only needs `.md`{.inline} files in the `markdown`{.inline} directory. You can simple copy and paste your `.md`{.inline} files into this directory and voila! If your documentation is in versions, you will need to have a separate directory for every version number. For example, if your documentation has version 1.5 and 2.2, you will need to create `1.5`{.inline} and `2.2`{.inline} directories in the `markdown`{.inline} directory. You will then need to copy the appropriate `.md`{.inline} files into their respective directories. 
 See the [Conventions > Versioning docs]({version}/convention-versions) for more on this.
 
-### Go to This URL
+### Use The Inbuilt Cloning Tool
 
-It is possible to pull in your markdown files by visiting the URL below. This assumes you are still running the app from the server we started above via `php -S localhost:8000`{.inline}
+It is much easier to pull in your markdown files using the cloning URL that is built into QuickieDox. Assuming you are still running the app from the server we started above using `php -S localhost:8000`{.inline}, you will need to visit the URL below.
 
 
 [http://localhost:8000/get-markdown](http://localhost:8000/get-markdown)
 
 {.stop.alert}
 Ensure you have properly modified your QuickieDox [configurations]({version}/customize-config) before clicking on the URL above to pull in your markdown files. The URL will ask for the PIN you specify in the `.env`{.inline} or `.config.php`{.inline} file. You won't be able to use this URL if your PIN is blank.
-
-
-### Run This Bash Script
-
-At the root of the project is a `get-markdown.sh`{.inline} shell script containing very few lines of code to clone the repo containing the markdown files. You will need to modify the script and put in the url to your markdown files repo. Next run the script as shown below in a terminal. You need to be at the root of your project.
-
-{.command-line}
-```bash
-./get-markdown.sh
-```
-
-Once the markdown files are pulled in, you should be able to see your documentation pages. The default URL in the script is the one for the QuickieDox markdown files. You can test with this to ensure you can read docs.
 
 &nbsp;

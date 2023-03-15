@@ -18,4 +18,4 @@ We believe a lot of people who have documentation needs would love to have a way
 
 ### Protecting Pages
 
-We believe some documentations require users to be logged in first before accessing them. Placeholders have been provided for this but not implemented fully. Since this is a vanilla PHP project and we believe people authenticate their users differently, it is hard to land on a one size fits all solution.
+We believe some documentations require users to be logged in first before accessing them. Placeholders have been provided for this but not implemented fully. Since this is a vanilla PHP project and we believe people authenticate their users differently, it is hard to land on a one size fits all solution. You are therefore advised to implement your own authentication in `Controllers/AuthController.php`{.inline} and `Core/Auth.php`{.inline}. [This page](customize-auth) highlights what is already included with QuickieDox.

@@ -1,12 +1,12 @@
 # Directory Structure
 
-QuickieDox has a very lean directory structure. This is possible because it is not tied to any framework. Below is a list of the directories and files that make up QuickieDox.
+QuickieDox has a very lean directory structure. This is possible because it is void of any framework. Below is a list of the directories and files that make up QuickieDox.
 
 | Directory | Files | Description |
 | :--- | :--- | :--- |
 | `Root Directory`{.inline} {nowrap="nowrap"} | index.php | Entry point of the app. Loads and sets environment variables as well as routes |
 | | config.php | Configurable variables that get loaded and used throughout the app |
-| | .env | Encironment variables |
+| | .env-example | Example file containing environment variables |
 | | deploy-example.php | Example deployment script to help deploy documentation to production or test server. Requires deployer/deployer package. |
 | | composer.json | List of packages to pull in to app |
 | | routes.php | Defines routes used in loading different pages in the app |
@@ -18,7 +18,9 @@ QuickieDox has a very lean directory structure. This is possible because it is n
 | `assets > js`{.inline} | prism.js| javascript file for code highlighting |
 | | quickiedox.js | main js file for the app |
 | `Controllers`{.inline} | DocController.php| handles interaction between the user interface and the backend |
+| | AuthController.php| placeholder file for writing out your authentication logic |
 | `Core`{.inline} | App.php| sets and gets variables that are available throughout the app |
+| | Auth.php| placeholder file for writing out your authentication logic |
 | | bootstrap.php | loads in all configuration variables and sets them globally using App.php |
 | | Doc.php | handles manipulation of md files for reading |
 | | Envy.php | handles reading of variables from .env file |
@@ -29,6 +31,9 @@ QuickieDox has a very lean directory structure. This is possible because it is n
 | `markdown`{.inline} | | .md files are pulled in here by default |
 | `src`{.inline} | index.css | source css file before it is compiled to assets/css/quickiedox.css |
 | `vendor`{.inline} | | composer packages are pulled in here |
-| `views`{.inline} | 404.md | default 404 page. Used when pages are missing. This is placed in the views directory instead of markdown becuase the file needs to always be available even if the user decides to load their md files into a directory other than `markdown`{.inline} |
+| `views`{.inline} | 404.md | default 404 markdown file. Used when pages are missing. This is placed in the views directory instead of markdown because the file always needs to be available even if the user decides to load their md files from a directory other than `markdown`{.inline} |
+| | 404.php | page displayed when a route is missing. This is different from what is displayed when a documentation page is missing |
+| | header.php | shared include file used  by home.php, pin.php and reader.php |
 | | home.php | default homepage |
+| | pin.php | PIN verification page showed before pulling in .md documentation files |
 | | reader.php | layout page for displaying documentation for reading |
