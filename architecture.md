@@ -37,6 +37,7 @@ At the view level, Javascript is then used to:
 * Set the page title to the `default_page_title`{.inline} defined in the config file plus what was defined in the first \<h1\> tag of the documentation page being viewed. Example: the title for this page is set to QuickieDox Documentation: How QuickieDox Works. *QuickieDox Documentation* is what has been defined in the config.php file for `default_page_title`{.inline}. *How QuickieDox Works* is what has been defined as the first \<h1\> on this page.
 * Highlight the current page in the navigation so user knows what page they are viewing.
 * Make navigation items collapsible and expandable.
+* Draw the sub navigation within the documentation.
 
 {.alert.tip}
 You are encouraged to just snoop around the code to better understand how documentation content is served. It is not as complex as one might presume.
