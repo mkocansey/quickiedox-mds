@@ -20,3 +20,10 @@ To compile your changes run this command from the root of your project.
 ```bash
 npx tailwindcss -i ./src/index.css -o ./assets/css/quickiedox.css --watch
 ```
+
+To compile your changes for production run the command below
+
+{.command-line}
+```bash
+npx tailwindcss -i ./src/index.css -o ./assets/css/quickiedox.css --minify
+```

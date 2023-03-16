@@ -17,7 +17,18 @@ QuickieDox is not provided as software as a service. QuickieDox does not host yo
 
 QuickieDox is not a composer package so there is really nothing to composer install. To create your own documentation website, simply [**clone the repo**](https://github.com/mkocansey/quickiedox-mds/archive/refs/heads/main.zip) and begin your [customization](customize-home). 
 
-### Clone via HTTPS
+### Via Composer
+
+The easiest is to create a QuickieDox replica project using composer by running the command below.
+
+```bash
+# replace your-project-name with the name of the directory you want created
+# or the name of your project (directory will be created if it does not exist)
+```
+```bash
+composer create-project mkocansey/quickiedox your-project-name
+```
+### Clone From GitHub: HTTPS
 ```bash
 # create a directory where you want to clone quickiedox
 # cd into that directory and run 
@@ -27,7 +38,7 @@ QuickieDox is not a composer package so there is really nothing to composer inst
 git clone https://github.com/mkocansey/quickiedox.git
 ```
 
-### Clone via SSH
+### Clone From GitHub: SSH
 ```bash
 # create a directory where you want to clone quickiedox
 # cd into that directory and run 

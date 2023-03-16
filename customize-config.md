@@ -1,4 +1,4 @@
-# Customize Configurations
+# Configurations
 
 The variables defined in `.env`{.inline} and `config.php`{.inline} allow you to easily customize QuickieDox to suit your needs. The `config.php`{.inline} sets defaults for variables it is expecting to be defined in the `.env`{.inline} file. Below is a list of all the variables in both files and what they do.
 
