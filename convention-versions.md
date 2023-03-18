@@ -30,7 +30,7 @@ For documentations that are versioned, QuickieDox serves pages by looking for .m
 
 ### Pull Versions From Git
 
-As explained [here](installation), you can pull in the markdown files either by visiting the `/get-markdown`{.inline} route. If you earlier on started the web server built in to PHP with `php -S localhost:8000`{.inline}, the url will be [http://localhost:8000/get-markdown](http://localhost:8000/get-markdown)
+As explained [here](installation), you can pull in the markdown files either by visiting the `/get-markdown`{.inline} route. If you earlier on started the web server built in to PHP with `php -S localhost:8000`{.inline}, the url will be [http://localhost:8000/clone](http://localhost:8000/clone)
 
 
 QuickieDox expects each version you specified in your `doc_versions`{.inline} array to exist **as a branch**. 

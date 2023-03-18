@@ -110,7 +110,7 @@ See the [Conventions > Versioning docs](convention-versions) for more on this.
 It is much easier to pull in your markdown files using the cloning URL that is built into QuickieDox. Assuming you are still running the app from the server we started above using `php -S localhost:8000`{.inline}, you will need to visit the URL below.
 
 
-[http://localhost:8000/get-markdown](http://localhost:8000/get-markdown)
+[http://localhost:8000/clone](http://localhost:8000/clone)
 
 {.stop.alert}
 Ensure you have properly modified your QuickieDox [configurations](customize-config) before clicking on the URL above to pull in your markdown files. The URL will ask for the PIN you specify in the `.env`{.inline} or `.config.php`{.inline} file. You won't be able to use this URL if your PIN is blank.
