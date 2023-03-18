@@ -1,14 +1,39 @@
 # Code Snippets 
 
-Code highlighting in QuickieDox is handled with [Prism](https://prismjs.com). Prism supports highlighting for several languages but only the following have been compiled into QuickieDox. 
+Code highlighting in QuickieDox is handled with [Prism](https://prismjs.com). 
 
-List languages 
+## Supported Languages
 
-By default line numbers are disabled when displaying code snippets in QuickieDox. This can be enabled by setting `DISPLAY_LINE_NUMBERS`{.inline} to `true`{.inline} in the `.env`{.inline} file or `display_line_numbers`{.inline} to `true`{.inline} in the `config.php`{.inline} file. 
+Prism supports highlighting for several syntaxes but only the following have been compiled into QuickieDox. 
+
+||||
+|---|---|---|
+| markup (html, svg, xml, mathml, ssml, atom, rss,) | css | clike |
+| javascript, js | bash, sh, shell | dart |
+| go | js-templates | kotlin, kt, kts |
+| perl | php | python, py |
+| jsx, tsx | regex | swift |
+| typeScript, ts, tsconfig | wasm | |
+
+
+By default line numbers are disabled when displaying code snippets in QuickieDox. This can be enabled by setting `DISPLAY_LINE_NUMBERS`{.inline} to `true`{.inline} in the `.env`{.inline} file or `display_line_numbers`{.inline} to `true`{.inline} in the `config.php`{.inline} file. It is possible to enable line numbers for individual code snippets using [inline attributes](markdown-attributes). For example.
+
+~~~markdown
+```js
+{.line-numbers}
+setTheme = () => {
+	let theme = window.localStorage.getItem('theme') || 'dark';
+	document.body.classList.add(theme);
+}
+```
+~~~
+
+The above code snippet will be displayed with line numbers. 
+
 
 ## Code Blocks
 
-Code blocks can be defined either by using the backtick (`) or tilde (~) characters. You will also need to append the language the snippet is in to enable Prism to do the proper highlighting as shown in the examples below:
+Code blocks can be defined either by using the backtick (`) or tilde (~) characters. You will also need to [append the language](#supported-languages) the snippet is in to enable Prism properly perform its highlighting as shown in the examples below:
 
 ~~~markdown
 ```js
@@ -68,3 +93,5 @@ You can simply run `composer install`{.inline} to pull in packages
 
 {.alert.tip}
 You can enable line numbers for all code blocks in your project by setting `DISPLAY_LINE_NUMBERS=true`{.inline} in the `.env`{.inline} file.
+
+&nbsp;

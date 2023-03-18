@@ -1,9 +1,10 @@
 # Inline Attributes
-This document will not focus on teaching markdown. You should know how to already author markdown documents. 
 
-It is possible to include html tags in your markdown but the CommonMark markdown parser used by QuickieDox will strip all html from the markdown files and parse mostly acceptable markdown tags and return them as html. 
+This document will not focus on teaching markdown since it is expected you already know some basic markdown syntax. 
 
-That said, QuickieDox provides a way to include inline CSS targeted at specific elements in your markdown. This is achieved using the sosoandso plugin available in CommonMark. You can then style these inline classes in your own css files. 
+It is possible to include HTML tags in your markdown but QuickieDox strips out HTML and parses mostly acceptable markdown tags and return them as HTML. The stripping of HTML tags is done by setting `ALLOW_HTML_IN_MARKDOWN=false`{.inline}. Set this to true if you want to allow the HTML tags you have in your markdown files.
+
+That said, QuickieDox provides a way to include inline CSS targeted at specific elements in your markdown. This is achieved using [this feature](https://commonmark.thephpleague.com/2.3/extensions/attributes/) available in CommonMark. You can then style these inline classes in your own css files or in `src/index.css`{.inline}. 
 
 There are two ways to attach styles and classes to elements. The most common methods are:
 
@@ -25,7 +26,7 @@ You can even set multiple classes on the element.
 
 ```markdown
 {.uppercase .purple}
-This is a paragraph that’s all uppercase and purple 
+This is a paragraph that's all uppercase and purple 
 ```
 
 The above will result in the following HTML after parsing.
@@ -35,7 +36,7 @@ The above will result in the following HTML after parsing.
 </p>
 ```
 
-Instead of classes you could also set IDs on block level elements. 
+Instead of classes, you can also set IDs on block level elements. 
 
 ```markdown
 {#page-title}
@@ -53,17 +54,17 @@ You can even do both classes and IDs on the elements.
 
 ```markdown
 `{#page-title .uppercase .purple}
-This is a paragraph that’s all uppercase and purple with the ID as page-title. 
+This is a paragraph that's all uppercase and purple with the ID as page-title. 
 ```
 
 The above will result in the following HTML after parsing
 ```html
 <p id="page-title" class="uppercase purple">
-     This is a paragraph that’s all uppercase and purple with the ID as page-title. 
+     This is a paragraph that's all uppercase and purple with the ID as page-title. 
 </p>
 ```
 
-It makes sense to apply classes to elements that are repeated throughout your documentation that need to have the same styling. In one off cases where you want to set some styling to a block element, you can set the `style`{.inline} attribute as shown below.  
+It makes sense to apply classes to elements that are repeated throughout your documentation that need to have the same styling. In one-off cases where you want to set some styling to a block element, you can set the `style`{.inline} attribute as shown below.  
 
 ```markdown
 {style="line-height: 2"}
@@ -96,14 +97,14 @@ The above will result in the following HTML after parsing.
 
 ## As In-line 
 
-Defining classes, IDs and styles inline means they apply to inline elements and not block level elements as explained earlier above. Let’s take the example below. 
+Defining classes, IDs and styles inline means they apply to inline elements and not block level elements as explained earlier above. Let's take the example below. 
 
  ```markdown
 This is a paragraph with this `word`{.text-red-400} as red for emphasis. 
 ```
 
 
-The above will result in the following HTML after parsing
+The above will result in the following HTML after parsing.
 
 ```html
 <p>
@@ -119,7 +120,7 @@ This is an example showing how to make me **bold and bright**{style="color: lime
 ```
 
 
-The above will result in the following HTML after parsing
+The above will result in the following HTML after parsing.
 ```html
 <p>
 	This is an example showing how to make 
@@ -128,22 +129,22 @@ The above will result in the following HTML after parsing
 ```
 
 {.alert.stop}
-Inline styles and classes don't seem to work for all elements. Just putting the attributes after a word for example will not create a \<span\>. See this page for more on [markdown attributes](https://commonmark.thephpleague.com/2.3/extensions/attributes/).
+Inline styles and classes don't seem to work for all elements. Just putting the attributes after a word for example will not create a \<span\>. See more on [markdown attributes](https://commonmark.thephpleague.com/2.3/extensions/attributes/).
 
 ## It's Not Just CSS Attributes
 
 The attribute definitions are not limited to just classes, IDs and styles. You can define any attribute on an element. 
 
 ```markdown
-{data-nav="download"}
+{data-nav="download" aria-label="download"}
 Download all our lesson notes today.
 ```
 
 
-The above will result it 
+The above will result in 
 
 ```html
-<p data-nav="download">
+<p data-nav="download" aria-label="download">
 	Download all our lesson notes today.
 </p>
 ```

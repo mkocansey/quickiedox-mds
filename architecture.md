@@ -1,6 +1,6 @@
 # How QuickieDox Works
 
-QuickieDox is a **purely vanilla PHP** project that leverages the following libraries to display documentation from markdown files.
+QuickieDox is a **purely vanilla PHP** project that leverages the following libraries to display markdown files documentation.
 
 
 | Library                                                                              | URL                                                                                                         |
@@ -22,7 +22,9 @@ The `index.php`{.inline} file at the root of the project handles vendor autoload
 
 ### Secondly
 The `DocController.php`{.inline} file then decides what content to serve. The constructor in the `DocController`{.inline} class sets values for the page to be parsed and returned. This will either be the documentation page the user requested (by clicking on a link in the [navigation](convention-nav)) or the default page defined in the `config.php`{.inline} file. Where a page was specified but a corresponding `.md`{.inline} file was not found, a default `404.md`{.inline} is set as the page to parse and return.
+
 Below are really the only types of content expected by the controller:
+
 * The documentation home page.
 * A 404 page for undefined routes.
 * The default documentation page. This is sort of the first page you want to display anytime a user lands on your docs page. This is usually an `overview`{.inline} page or `installation`{.inline} page. Completely up to you.
@@ -33,15 +35,16 @@ The DocController then hands off the file to be parsed to the `Doc`{.inline} cla
 
 ### Lastly
 At the view level, Javascript is then used to: 
+
 * Set the page title to the `default_page_title`{.inline} defined in the config file plus what was defined in the first \<h1\> tag of the documentation page being viewed. Example: the title for this page is set to QuickieDox Documentation: How QuickieDox Works. *QuickieDox Documentation* is what has been defined in the config.php file for `default_page_title`{.inline}. *How QuickieDox Works* is what has been defined as the first \<h1\> on this page.
-* Highlight the current page in the navigation so user knows what page they are viewing.
-* Make navigation items collapsible and expandable.
+* Highlight the current page in the navigation so users knows what page they are viewing.
+* Make navigation items collapsible and expandable. No two top level sections can be open at the same time.
 * Draw the sub navigation within the documentation.
 * Make all external links open in a new window/tab.
-* Set the page dark/light theme.
+* Set the page theme (dark or light).
 * Trigger the search box shortcuts.
 
 {.alert.tip}
-You are encouraged to just snoop around the code to better understand how documentation content is served. It is not as complex as one might presume.
+You are encouraged to just snoop around the code to better understand how documentation content is served. It is not complex at all.
 
 &nbsp;

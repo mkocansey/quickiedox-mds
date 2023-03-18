@@ -5,6 +5,9 @@
 	* [How This Works](architecture)
 	* [Known Issues](known-issues)
 	* [Deploying Docs](deployment)
+	* [Contribution Guide](contribute)
+
+	
 * # Customization
 
 	* [Home Page](customize-home)

@@ -7,51 +7,54 @@ QuickieDox comes with inbuilt helper css classes that turn block elements in you
 ## Note
 
 {.alert.note}
-This is an example of a note attention seeker. In here we use the info icon and have a yellow background colour.  
+This is an example of a note alert. In here we use the info icon and have a yellow background colour.  
 
 Below is the markdown used in generating the above alert. 
 
 ```markdown
 {.alert.note}
-This is an example of a note attention seeker. 
+This is an example of a note alert. 
 In here we use the info icon and have a yellow background colour.
 ```
 
 ## Tip
 
 {.alert.tip}
-This is an example of a tip attention seeker. In here we use the bulb icon and have a blue background colour.
+This is an example of a tip alert. In here we use the bulb icon and have a blue background colour.
 
 Below is the markdown used in generating the above alert. 
 
 ```markdown
 {.alert.tip}
-This is an example of a tip attention seeker. 
+This is an example of a tip alert. 
 In here we use the bulb icon and have a blue background colour.
 ```
 
 ## Okay
 
 {.alert.okay}
-This is an example of an okay attention seeker. In here we use the check icon and have a green background colour.
+This is an example of an okay alert. In here we use the check icon and have a green background colour.
 
 Below is the markdown used in generating the above alert. 
 
 ```markdown
 {.alert.check}
-This is an example of an okay attention seeker. 
+This is an example of an okay alert. 
 In here we use the check icon and have a green background colour.
 ```
 
 ## Stop
 
 {.alert.stop}
-This is an example of a stop attention seeker. In here we use the exclamation icon and have a red background colour.
+This is an example of a stop alert. In here we use the exclamation icon and have a red background colour.
 
 Below is the markdown used in generating the above alert. 
 
 ```markdown
 {.alert.stop}
-This is an example of an okay attention seeker. 
+This is an example of an okay alert. 
 In here we use the exclamation icon and have a red background colour.
 ```
+
+&nbsp;
+

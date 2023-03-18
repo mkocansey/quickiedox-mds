@@ -11,8 +11,7 @@ QuickieDox has a very lean directory structure. This is possible because it is v
 | | composer.json | List of packages to pull in to app |
 | | routes.php | Defines routes used in loading different pages in the app |
 | | tailwind.config.js | TailwindCSS configuration file |
-| `assets > css`{.inline} | animate.min.css | css file for animating navigation items |
-| | prism.css | css file for handling code highlighting |
+| `assets > css`{.inline} | prism.css | css file for handling code highlighting |
 | | quickiedox.css | main css file for the app |
 | `assets > images`{.inline} {nowrap="nowrap"} | | contains image files used in the app |
 | `assets > js`{.inline} | prism.js| javascript file for code highlighting |
@@ -28,11 +27,11 @@ QuickieDox has a very lean directory structure. This is possible because it is v
 | | Request.php | handles url requests |
 | | Router.php | handles routing mechanism |
 | | Session.php | sets and unsets session variables. Sessions here are mostly url parameters |
-| `markdown`{.inline} | | .md files are pulled in here by default |
 | `src`{.inline} | index.css | source css file before it is compiled to assets/css/quickiedox.css |
 | `vendor`{.inline} | | composer packages are pulled in here |
 | `views`{.inline} | 404.md | default 404 markdown file. Used when pages are missing. This is placed in the views directory instead of markdown because the file always needs to be available even if the user decides to load their md files from a directory other than `markdown`{.inline} |
 | | 404.php | page displayed when a route is missing. This is different from what is displayed when a documentation page is missing |
+| | auth-required.php | displayed if docs [require reader to be signed in](customizze-auth) but they are not |
 | | header.php | shared include file used  by home.php, pin.php and reader.php |
 | | home.php | default homepage |
 | | pin.php | PIN verification page showed before pulling in .md documentation files |
