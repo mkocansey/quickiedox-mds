@@ -26,6 +26,8 @@ The only compiled asset in the QuickieDox codebase is the `assets > css > quicki
 
 ## Coding Style 
 
+QuickieDox adheeres to the [PSR-2](https://www.php-fig.org/psr/psr-2/) coding and the [PSR-4](https://www.php-fig.org/psr/psr-4) autoloading standards.
+
 
 
 ## Code of Conduct
