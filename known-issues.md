@@ -23,3 +23,7 @@ We believe some documentations require users to be logged in first before access
 ### Different Themes
 
 To get your documentation website looking different, QuickieDox has provided some [guidelines here](customize-tailwind). To get your site looking really different, you will need to do quite some styling. It will be great to ship with a couple of themes users can pick from when building their documentation sites. An alternative will also be able to make it possible for 3rd parties to create themes for QuickieDox.
+
+### Cloning From Tags
+
+Currently QuickieDox requires every documentation version to be a separate branch. It should be possible to pull in documentation from tags as well.
