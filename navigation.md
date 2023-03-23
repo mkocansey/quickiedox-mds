@@ -6,6 +6,7 @@
 	* [Known Issues](known-issues)
 	* [Deploying Docs](deployment)
 	* [Contribution Guide](contribute)
+	* [Credits](credits)
 
 	
 * # Customization
