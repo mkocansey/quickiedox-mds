@@ -1,3 +1,6 @@
 # Credits
 
-Thanks to [Storyset]() and Heroicons for making wonderful assets we can use in our designs.
+QuickieDox uses
+
+* illustrations from [Storyset](https://storyset.com)
+* icons from [Hericons](https://heroicons.dev)
