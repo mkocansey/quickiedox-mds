@@ -50,3 +50,14 @@ Run this from the root of your QuickieDox project.
 ```bash
 npx tailwindcss -i ./src/index.css -o ./assets/css/quickiedox.css --minify
 ```
+
+## Use Your Logo
+
+Yes you can. The default is the QuickieDox logo but if you want to make this yours and brand it as yours you will need to change the logo. The default is in `assets/images/logo.svg`{.inline}. You can simply replace the logo file with the same and your logo will immediately take effect, or, upload your image to the same `assets/images/`{.inline} directory and update `views/reader.php`{.inline} with the file name of your logo.
+
+```html
+- <img src="/assets/images/logo.svg" alt="QuickDox Logo" class="h-7 md:py-1 ml-8 md:h-10 md:ml-0" />
++ <img src="/assets/images/my-new-logo.png" alt="MKO Logo" class="h-7 md:py-1 ml-8 md:h-10 md:ml-0" />
+```
+
+&nbsp;
