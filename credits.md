@@ -7,3 +7,4 @@ QuickieDox uses
 * packages from [CommonMark](https://commonmark.thephpleague.com/)
 * code highlighting from [Prism](http://prismjs.com/)
 * CSS library from [TailwindCSS](https://tailwindcss.com/)
+* [Guzzle](https://docs.guzzlephp.org/en/stable/overview.html) for making HTTP calls

@@ -8,7 +8,7 @@ QuickieDox is a **purely vanilla PHP** project that leverages the following libr
 | [CommonMark](https://commonmark.thephpleague.com)                                    | Parses markdown files to be rendered as HTML.                                          |
 | [TailwindCSS](https://tailwindcss.com)                                               | Nicely design and layout the documentation pages.                                               |
 | [Prism JS](http://prismjs.com)                                                       | For syntax highlighting of code blocks.                                                  |
-| [Symfony HTTP Client**](https://symfony.com/doc/current/http_client.html#installation) {nowrap="nowrap"} | Used for making  API calls if testing is enabled. |
+| [Guzzle HTTP Client](https://docs.guzzlephp.org/en/stable/overview.html) {nowrap="nowrap"} | Used for making  HTTP requests if testing is enabled. |
 
 
 The [Installation](installation) steps simplifies how to get up and running with QuickieDox.

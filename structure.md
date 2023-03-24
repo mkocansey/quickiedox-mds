@@ -31,7 +31,7 @@ QuickieDox has a very lean directory structure. This is possible because it is v
 | `vendor`{.inline} | | composer packages are pulled in here |
 | `views`{.inline} | 404.md | default 404 markdown file. Used when pages are missing. This is placed in the views directory instead of markdown because the file always needs to be available even if the user decides to load their md files from a directory other than `markdown`{.inline} |
 | | 404.php | page displayed when a route is missing. This is different from what is displayed when a documentation page is missing |
-| | auth-required.php | displayed if docs [require reader to be signed in](customizze-auth) but they are not |
+| | auth-required.md | displayed if docs [require reader to be signed in](customize-auth) but they are not |
 | | header.php | shared include file used  by home.php, pin.php and reader.php |
 | | home.php | default homepage |
 | | pin.php | PIN verification page showed before pulling in .md documentation files |
